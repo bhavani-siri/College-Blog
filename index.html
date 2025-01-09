@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="loginPage" class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+
+    <!-- Blog Page -->
+    <div id="blogPage" class="blog-container">
+        <header>
+            <h1>Welcome to My Blog</h1>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <!-- Blog Post -->
+        <div class="blog-post">
+            <h2>REC College Blog</h2>
+            <img src="logo.jpg" alt="Blog Image"width="100"height="400"><br>
+            <a href="https://www.raghuenggcollege.com/">COLLEGE SITE</a>
+            
+            <h3>Comments</h3>
+            <div id="commentsSection">
+                <!-- Comments will appear here -->
+            </div>
+
+            <textarea id="commentInput" placeholder="Write a comment..." required></textarea>
+            <button id="submitCommentBtn">Post Comment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
